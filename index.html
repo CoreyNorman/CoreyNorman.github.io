@@ -56,9 +56,9 @@
         <h2>Contact</h2>
         <p>Interested in joining our cause or have an idea to share? Reach out to us!</p>
         <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdXtbVJcNHhOY06Bcb-BzFRrmjKktUSXuO6Fes4I6K_9khabA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitForm()">
-            <input type="text" name="${{secrets.NAME_FIELD}}" placeholder="Your Name" required>
-            <input type="email" name="${{secrets.EMAIL_FILED}}" placeholder="Your Email" required>
-            <textarea name="${{secrets.MESSAGE_FIELD}}" placeholder="Your Message" required></textarea>
+            <input type="text" name="${{NAME_FIELD}}" placeholder="Your Name" required>
+            <input type="email" name="${{EMAIL_FILED}}" placeholder="Your Email" required>
+            <textarea name="${{MESSAGE_FIELD}}" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
         <iframe name="hidden_iframe" style="display:none;"></iframe>
