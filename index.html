@@ -8,10 +8,15 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Plastic Free World</h1>
-            <nav>
-                <ul>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="./images/IMG_9224.jpeg" alt="Plastic Free World Logo" height="100" width="100">
+            </div>
+            <div class="title">
+                <h1>Plastic Free World</h1>
+            </div>
+            <nav class="nav">
+                <ul class="main-nav">
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#mission">Our Mission</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -21,63 +26,105 @@
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="section-container">
         <div class="container">
             <h2>About Us</h2>
             <p>Founded in 2024 by Katlyn Hickman, a dedicated Environmental Science student at the University of Phoenix, Plastic Free World is committed to eradicating plastic waste and promoting sustainable alternatives. Our journey began with a simple mission: to save our planet from the harmful effects of plastic pollution.</p>
-            <div>
-                <img src="./images/BabyTurtle.jpg" alt="Baby turtle attempting to crawl over a bottle laying in the sand on the beach." height="400" width="350">
-                <img src="./images/Dolphin.jpg" alt="Dolphin with a platic ring around its mouth." height="400" width="350">
-                <img src="./images/Seal.jpg" alt="A seal surrounded by trash and rope." height="400" width="350">
-                <img src="./images/WasteinRiver.jpg" alt="Trash floating in a river." height="400" width="350">
-                <img src="./images/PickUp.jpg" alt="Woman picking trash up off the beach into a plastic bag." height="400" width="350">
-                <img src="./images/Katlyn posing.jpg" alt="Katlyn Hickman posing with a smile." height="400" width="350">
+            <div class="image-gallery">
+                <img src="./images/IMG_9225.png" alt="Sustainable Earth graphic">
+                <img src="./images/BabyTurtle.jpg" alt="Baby turtle attempting to crawl over a bottle laying in the sand on the beach.">
+                <img src="./images/Dolphin.jpg" alt="Dolphin with a plastic ring around its mouth.">
+                <img src="./images/Seal.jpg" alt="A seal surrounded by trash and rope.">
+                <img src="./images/WasteinRiver.jpg" alt="Trash floating in a river.">
+                <img src="./images/PickUp.jpg" alt="Woman picking trash up off the beach into a plastic bag.">
+                <img src="./images/Katlyn posing.jpg" alt="Katlyn Hickman posing with a smile.">
             </div>
         </div>
-        
     </section>
 
-    <section id="mission">
+    <section id="mission" class="section-container">
         <div class="container">
             <h2>Our Mission</h2>
             <p>At Plastic Free World, our mission is to reduce plastic use by providing eco-friendly, sustainable alternatives. We aim to educate, inspire, and mobilize communities to join us in our fight against plastic pollution, protecting our environment for future generations.</p>
+            <h3>Understanding Plastic Pollution</h3>
+            <p>Plastic pollution has numerous negative effects on the environment, necessitating urgent and comprehensive action. Below are some of the major impacts:</p>
+            <h2>1. Harm to Wildlife</h2>
+            <p>Marine animals often mistake plastic for food, leading to ingestion and sometimes death. Additionally, animals can become entangled in plastic debris, causing injury or suffocation.</p>
+            <h2>2. Ecosystem Disruption</h2>
+            <p>Plastic pollution can disrupt marine and terrestrial ecosystems, affecting the balance of species and habitats.</p>
+            <h2>3. Contamination of Food Chains</h2>
+            <p>Plastics can break down into tiny particles called microplastics, which are ingested by smaller organisms and can accumulate in the food chain, potentially reaching humans.</p>
+            <h2>4. Water Pollution</h2>
+            <p>Plastics can leach harmful chemicals into the water, contaminating aquatic environments and posing risks to both aquatic life and human health.</p>
+            <h2>5. Economic Impact</h2>
+            <p>Tourism, fishing, and other industries dependent on clean environments suffer when beaches, waterways, and landscapes are polluted with plastic waste.</p>
+            <h2>6. Health Risks</h2>
+            <p>Plastic pollution can lead to various health issues for humans, including respiratory problems from burning plastics, chemical exposure from contaminated water and food, and ingestion of microplastics.</p>
+            <p>Addressing plastic pollution requires concerted efforts from individuals, communities, industries, and governments to reduce plastic usage, improve waste management systems, and promote sustainable alternatives.</p>
+            <h3>Actions to Reduce Plastic Pollution</h3>
+            <p>There are several actions you can take to help reduce plastic pollution:</p>
+            <ul>
+                <li><strong>Reduce Single-Use Plastics</strong>: Opt for reusable alternatives such as water bottles, shopping bags, and food containers instead of single-use plastics.</li>
+                <li><strong>Recycle Properly</strong>: Dispose of plastics responsibly by recycling whenever possible. Make sure to follow local recycling guidelines and properly clean and sort recyclable materials.</li>
+                <li><strong>Avoid Microplastics</strong>: Choose personal care and cosmetic products that are microplastic-free to prevent these particles from entering the environment.</li>
+                <li><strong>Participate in Clean-up Efforts</strong>: Join or organize community clean-up events to remove plastic waste from beaches, parks, and other natural areas.</li>
+                <li><strong>Support Legislation</strong>: Advocate for policies and regulations that promote plastic reduction, recycling, and waste management at the local, national, and global levels.</li>
+                <li><strong>Spread Awareness</strong>: Educate others about the harmful effects of plastic pollution and encourage them to take action to reduce their plastic consumption.</li>
+                <li><strong>Choose Sustainable Alternatives</strong>: Opt for products packaged in biodegradable or compostable materials, and support businesses that prioritize sustainable practices.</li>
+            </ul>
+            <p>By incorporating these actions into your daily life, you can contribute to the collective effort to combat plastic pollution and protect the environment.</p>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section-container">
         <div class="container">
             <h2>Projects</h2>
             <p>Our projects range from local clean-up initiatives to partnering with businesses to reduce their plastic footprint. We're always looking for innovative ways to minimize plastic waste and promote sustainability.</p>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section-container">
         <div class="container">
-        <h2>Contact</h2>
-        <p>Interested in joining our cause or have an idea to share? Reach out to us!</p>
-        <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdXtbVJcNHhOY06Bcb-BzFRrmjKktUSXuO6Fes4I6K_9khabA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitForm()">
-            <input type="text" name="entry.1483672800" placeholder="Your Name" required>
-            <input type="email" name="entry.170059177" placeholder="Your Email" required>
-            <textarea name="entry.322527344" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <iframe name="hidden_iframe" style="display:none;"></iframe>
+            <h2>Contact</h2>
+            <p>Interested in joining our cause or have an idea to share? Reach out to us!</p>
+            <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdXtbVJcNHhOY06Bcb-BzFRrmjKktUSXuO6Fes4I6K_9khabA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitForm()">
+                <input type="text" name="entry.1483672800" placeholder="Your Name" required>
+                <input type="email" name="entry.170059177" placeholder="Your Email" required>
+                <textarea name="entry.322527344" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
         </div>
     </section>
     
-    <script>
-        function submitForm() {
-        // Redirect to the thank you page after a short delay
-        setTimeout(function() {
-            window.location.href = "thank-you.html";
-        }, 1000); // Adjust the delay as needed (in milliseconds)
-        }
-    </script>
-
     <footer>
-        <div class="container">
+        <div class="container footer-container">
             <p>&copy; 2024 Plastic Free World. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function submitForm() {
+            setTimeout(function() {
+                window.location.href = "thank-you.html";
+            }, 1000);
+        }
+    </script>
+
+<script>
+    let currentImageIndex = 0;
+    const images = document.querySelectorAll('.image-gallery img');
+    const totalImages = images.length;
+
+    images[currentImageIndex].style.display = 'block';
+
+    setInterval(() => {
+        images[currentImageIndex].style.display = 'none';
+        currentImageIndex = (currentImageIndex + 1) % totalImages; 
+        images[currentImageIndex].style.display = 'block'; 
+    }, 2000); 
+</script>
+
+
 </body>
 </html>
