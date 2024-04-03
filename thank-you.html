@@ -19,14 +19,20 @@
             <h1>Plastic Free World</h1>
             <nav>
                 <ul class="main-nav">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#mission">Our Mission</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#mission">Our Mission</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
+
     <section>
         <div class="container">
             <div class="thank-you-message">
@@ -48,6 +54,16 @@
         setTimeout(function() {
             window.location.href = "index.html";
         }, 5000);
+    </script>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
     </script>
 </body>
 </html>

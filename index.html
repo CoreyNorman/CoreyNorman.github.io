@@ -18,6 +18,11 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -33,7 +38,6 @@
                 <img src="./images/Katlyn at beach.jpeg" alt="Katlyn standing on a beach.">
                 <img src="./images/WasteinRiver.jpg" alt="Trash floating in a river.">
                 <img src="./images/PickUp.jpg" alt="Woman picking trash up off the beach into a plastic bag.">
-                <img src="./images/Katlyn posing.jpg" alt="Katlyn Hickman posing with a smile.">
             </div>
         </div>
     </section>
@@ -107,20 +111,28 @@
         }
     </script>
 
-<script>
-    let currentImageIndex = 0;
-    const images = document.querySelectorAll('.image-gallery img');
-    const totalImages = images.length;
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.image-gallery img');
+        const totalImages = images.length;
 
-    images[currentImageIndex].style.display = 'block';
+        images[currentImageIndex].style.display = 'block';
 
-    setInterval(() => {
-        images[currentImageIndex].style.display = 'none';
-        currentImageIndex = (currentImageIndex + 1) % totalImages; 
-        images[currentImageIndex].style.display = 'block'; 
-    }, 2000); 
-</script>
+        setInterval(() => {
+            images[currentImageIndex].style.display = 'none';
+            currentImageIndex = (currentImageIndex + 1) % totalImages; 
+            images[currentImageIndex].style.display = 'block'; 
+        }, 2000); 
+    </script>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
 
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
