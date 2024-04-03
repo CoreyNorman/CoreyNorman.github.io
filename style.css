@@ -128,3 +128,9 @@ form button {
         margin: 10px 0;
     }
 }
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+}
